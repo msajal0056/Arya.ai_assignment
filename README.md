@@ -4,6 +4,14 @@
 ## Problem statement
 Binary Classification problem - To do an exploratory analysis of the dataset provided, decide on feature selection, preprocessing before training a model to classify as class '0' or class '1'.
 
+## Requirements
+Libraries used and their versions-
+- Numpy=='1.19.2'
+- Pandas=='1.1.3'
+- Matplotlib=='3.3.2'
+- Seaborn=='0.11.0'
+- Sklearn=='1.0.2'
+
 ## Data
 1. training_set.csv - To be used as training and validation set - 3910 records, 57 features, 1 output
 2. test_set.csv (without Ground Truth) - 691 records, 57 features
