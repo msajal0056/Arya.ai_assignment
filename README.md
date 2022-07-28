@@ -8,6 +8,10 @@ Binary Classification problem - To do an exploratory analysis of the dataset pro
 1. training_set.csv - To be used as training and validation set - 3910 records, 57 features, 1 output
 2. test_set.csv (without Ground Truth) - 691 records, 57 features
 
+Training data contains -
+<p align="center" width="100%">
+    <img width="65%" src="label count.png"> 
+
 ## Solution
 - Data visualisation and EDA may be excellent complimentary tools for the feature selection process and can be used in the following ways:
   1. Univariate Analysis: Histograms and bar charts make it easier to see the distribution and variance of each variable.
@@ -25,6 +29,12 @@ Binary Classification problem - To do an exploratory analysis of the dataset pro
   2. Design a feature selection model based on two parameters: variable counts (ranging from 1 to all features) and score function (chi-square, anova, and mutual information are used here).
   3. Train a Logistic Regression model with selected features
   4. Find the accuracy score on the validation set
+  
+Feature selection graph plotted based on the above process-
+
+<p align="center" width="100%">
+    <img width="65%" src="feature selection graph.png">
+
 ### Select the best features based on the accuracy score on different score functions.
 
 ## Data preprocessing
@@ -33,6 +43,11 @@ Before being fed into a classification model, it is advised to normalize the dat
 ## Classification model
 A simple Logistic regression model is used for the problem as it provides very good result in case of binary classification. Though other models like KNN, SVM, and Neural networks can also be considered but they will require further tuning as compared to Logistic Regression.
 The Logistic regression model is trained on the train set and validated/tested on the validation set. Accuracy score, Confusion matrix, and classification report are used to check the performance of the model on the validation set.
+
+Model performance on the validation set shown by confusion matrix-
+
+<p align="center" width="100%">
+    <img width="65%" src="Confusion matrix.png">
 
 ## Test
 The test data provided in the file is loaded and a copy of it is created. The copy is then selected as for the prediction process involving following steps:
